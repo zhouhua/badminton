@@ -11,7 +11,7 @@ var users = require('./routes/users');
 
 var app = express();
 
-app.use(favicon(__dirname + '/favicon.ico'));
+app.use(favicon(path.join(__dirname, '/favicon.ico')));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
